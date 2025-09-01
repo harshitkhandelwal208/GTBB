@@ -1,6 +1,6 @@
 // scripts/clear-db.js
-import mongoose from "mongoose";
 import "dotenv/config";
+import mongoose from "mongoose";
 
 const uri = process.env.MONGODB_URI;
 if (!uri) {

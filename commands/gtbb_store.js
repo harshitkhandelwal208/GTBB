@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "discord.js";
-import { getCurrentWeek, getWeek, addBase } from "../db/index.js";
+import { getWeek, addBase } from "../db/index.js";
 import { requireHostRole } from "../utils/permissions.js";
 import { safeReply, safeDefer } from "../utils/safeReply.js";
 
@@ -48,9 +48,10 @@ export default {
       const imageUrl = interaction.options.getString("image");
 
       if (![1, 2, 3, 4, 5].includes(correct)) {
-        return interaction.editReply({ content: "❌ Correct builder must be between 1 and 5.", ephemeral: true });
+        return interaction.editReply({ content: "❌ Correct builder must be between 1 and 5." });
       }
 
+      // Accept Discord CDN links or other standard image URLs
       const urlRegex =
         /^https?:\/\/(?:cdn\.discordapp\.com|media\.discordapp\.net|.+)\.(?:png|jpe?g|gif|webp)(?:\?.*)?$/i;
 
@@ -58,24 +59,13 @@ export default {
         return interaction.editReply({
           content:
             "❌ Image must be a valid direct image URL (jpg, jpeg, png, gif, webp). Discord CDN links are recommended.",
-          ephemeral: true,
         });
       }
 
-      // Determine week number
-      const currentWeekNum = await getCurrentWeek();
-      let weekNumToUse;
+      // Ensure week exists (auto-create if not yet set)
+      const week = await getWeek((await import("../db/index.js")).getCurrentWeek() ? await (await import("../db/index.js")).getCurrentWeek() : 1);
 
-      if (currentWeekNum) {
-        weekNumToUse = currentWeekNum + 1;
-      } else {
-        // If no current week, try to get previous week's number
-        const previousWeek = await getWeek(0); // assuming 0 returns latest week or null
-        weekNumToUse = previousWeek?.weekNum ? previousWeek.weekNum + 1 : 1;
-      }
-
-      // Add base to DB
-      await addBase(weekNumToUse, {
+      await addBase(week.weekNum, {
         baseName: `Round ${roundNum}`,
         round: roundNum,
         options,
@@ -84,14 +74,13 @@ export default {
       });
 
       return interaction.editReply({
-        content: `✅ Base stored for **Round ${roundNum}** in GTBB week ${weekNumToUse}!`,
-        ephemeral: true,
+        content: `✅ Base stored for **Round ${roundNum}** in GTBB week ${week.weekNum}!`,
       });
     } catch (err) {
       try {
-        await interaction.editReply({ content: "⚠️ Error storing base.", ephemeral: true });
+        await interaction.editReply({ content: "⚠️ Error storing base." });
       } catch {
-        await safeReply(interaction, { content: "⚠️ Error storing base.", ephemeral: true });
+        await safeReply(interaction, { content: "⚠️ Error storing base." });
       }
       throw err;
     }
