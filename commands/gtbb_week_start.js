@@ -8,7 +8,12 @@ const HOST_ROLE_ID = process.env.GTBB_HOST_ROLE_ID;
 export default {
   data: new SlashCommandBuilder()
     .setName("gtbb_week_start")
-    .setDescription("GTBB Host: Start a new GTBB week"),
+    .setDescription("GTBB Host: Start a new GTBB week")
+    .addRoleOption(option =>
+      option.setName("role")
+        .setDescription("Role to ping for the new week")
+        .setRequired(true)
+    ),
 
   async execute(interaction) {
     if (!requireHostRole(interaction, HOST_ROLE_ID)) return;
@@ -20,10 +25,14 @@ export default {
       let current = await getCurrentWeek();
       const nextWeek = current ? current + 1 : 1;
 
-      // Create/reset week document
+      // Get existing bases if any (persisted)
+      const previousWeek = await getWeek(nextWeek);
+      const preservedBases = previousWeek?.bases || [];
+
+      // Create/reset week document but preserve bases
       await updateWeek(nextWeek, {
         weekNum: nextWeek,
-        bases: [],
+        bases: preservedBases,
         gtbbRound: {
           current: null,
           state: "idle",
@@ -38,9 +47,12 @@ export default {
       // Set as active week
       await setCurrentWeek(nextWeek);
 
+      // Get role to ping
+      const role = interaction.options.getRole("role");
+
       // Confirm
       return interaction.editReply({
-        content: `✅ GTBB **Week ${nextWeek}** has been started!\nAll previous bases, rounds, and scores have been reset.`,
+        content: `✅ GTBB **Week ${nextWeek}** has been started!\nAll previous rounds and scores have been reset.\n${role} - get ready for this week's GTBB!`,
       });
     } catch (err) {
       try {

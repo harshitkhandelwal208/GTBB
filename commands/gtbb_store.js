@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "discord.js";
-import { getWeek, addBase } from "../db/index.js";
+import { getCurrentWeek, getWeek, addBase } from "../db/index.js";
 import { requireHostRole } from "../utils/permissions.js";
 import { safeReply, safeDefer } from "../utils/safeReply.js";
 
@@ -51,7 +51,6 @@ export default {
         return interaction.editReply({ content: "❌ Correct builder must be between 1 and 5." });
       }
 
-      // Accept Discord CDN links or other standard image URLs
       const urlRegex =
         /^https?:\/\/(?:cdn\.discordapp\.com|media\.discordapp\.net|.+)\.(?:png|jpe?g|gif|webp)(?:\?.*)?$/i;
 
@@ -62,9 +61,20 @@ export default {
         });
       }
 
-      // Ensure week exists (auto-create if not yet set)
-      const week = await getWeek((await import("../db/index.js")).getCurrentWeek() ? await (await import("../db/index.js")).getCurrentWeek() : 1);
+      // Get current week number, default to 1 if not started yet
+      const currentWeekNum = (await getCurrentWeek()) || 1;
 
+      // Ensure week exists
+      const week = (await getWeek(currentWeekNum)) || {
+        weekNum: currentWeekNum,
+        bases: [],
+        gtbbRound: { current: null, state: "idle", round: 0, responses: [] },
+        gtbbRounds: [],
+        leaderboard: [],
+        ended: false,
+      };
+
+      // Add the new base
       await addBase(week.weekNum, {
         baseName: `Round ${roundNum}`,
         round: roundNum,
