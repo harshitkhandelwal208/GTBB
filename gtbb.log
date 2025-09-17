@@ -1,0 +1,226 @@
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:10:45.678Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:10:46.183Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:10:48.425Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:10:48.842Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:15:15.089Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:15:15.614Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:15:17.638Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:15:18.056Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:15:18.065Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:15:18.576Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:15:18.579Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:15:19.306Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:23:06.202Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:23:06.918Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:23:09.151Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:23:09.581Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:23:09.587Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:23:10.099Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:23:10.101Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:23:10.639Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:27:40.351Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:27:40.877Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:27:42.807Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:27:43.274Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:27:43.282Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:27:45.123Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:27:45.125Z"}
+{"level":"error","message":"Error registering commands: DiscordAPIError[50035]: Invalid Form Body\n3.options[2][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[3][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[4][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[5][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[6][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[7][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options\n3.options[8][APPLICATION_COMMAND_OPTIONS_REQUIRED_INVALID]: Required options must be placed before non-required options","timestamp":"2025-09-17T09:27:45.520Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:33:43.523Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:33:44.126Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:33:46.552Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:33:47.003Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:33:47.009Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:33:47.556Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:33:47.558Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:33:48.294Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T09:35:39.359Z"}
+{"level":"info","message":"Week 1 started by .blackwing.","timestamp":"2025-09-17T09:35:59.156Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T09:36:14.712Z"}
+{"level":"info","message":"User .blackwing. answered a for base 68ca80ebb012c9b43df1f391","timestamp":"2025-09-17T09:36:21.205Z"}
+{"level":"info","message":"Round 1 ended by .blackwing.","timestamp":"2025-09-17T09:36:38.264Z"}
+{"level":"error","message":"Error ending week: AxiosError: Request failed with status code 503","timestamp":"2025-09-17T09:37:28.008Z"}
+{"level":"error","message":"Error in command gtbb_week_end: DiscordAPIError[10062]: Unknown interaction","timestamp":"2025-09-17T09:37:28.368Z"}
+{"level":"error","message":"Uncaught Exception: DiscordAPIError[10062]: Unknown interaction","timestamp":"2025-09-17T09:37:28.849Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:46:21.188Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:46:21.726Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:46:23.968Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:46:24.357Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:46:24.363Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:46:25.185Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:46:25.187Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:46:25.678Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:53:39.391Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:53:39.989Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:53:41.865Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:53:42.290Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:53:42.294Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:53:42.756Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:53:42.758Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:53:43.269Z"}
+{"level":"info","message":"Base stored for round 1 in week 2 by .blackwing.","timestamp":"2025-09-17T09:54:40.739Z"}
+{"level":"info","message":"Week 2 started by .blackwing.","timestamp":"2025-09-17T09:54:57.960Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T09:55:10.236Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T09:56:50.390Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T09:56:50.989Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T09:56:52.882Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T09:56:53.315Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T09:56:53.323Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T09:56:53.934Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T09:56:53.934Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T09:56:54.441Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T09:58:07.100Z"}
+{"level":"info","message":"User .blackwing. answered a for base 68ca856095a174c7f9d7e551","timestamp":"2025-09-17T09:59:19.118Z"}
+{"level":"info","message":"Round 1 ended by .blackwing.","timestamp":"2025-09-17T09:59:32.157Z"}
+{"level":"info","message":"Week 2 ended by .blackwing.","timestamp":"2025-09-17T09:59:49.534Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T11:27:07.212Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T11:27:07.870Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T11:27:09.845Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T11:27:10.240Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T11:27:10.244Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T11:27:10.778Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T11:27:10.779Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T11:27:12.160Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T11:32:32.411Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T11:32:35.001Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T11:32:35.199Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T11:32:35.744Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T11:32:35.746Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T11:32:36.126Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T11:32:36.126Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T11:33:36.576Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T11:36:39.224Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T11:36:39.798Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T11:36:41.749Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T11:36:42.170Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T11:36:42.173Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T11:36:42.759Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T11:36:42.760Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T11:36:43.352Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T11:37:50.525Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T11:37:51.107Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T11:37:53.273Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T11:37:53.681Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T11:37:53.683Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T11:37:54.377Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T11:37:54.377Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T11:38:43.305Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T11:40:06.783Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T11:40:08.686Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T11:40:10.217Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T11:40:10.706Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T11:40:10.711Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T11:40:11.367Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T11:40:11.367Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T11:40:11.945Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T11:45:37.871Z"}
+{"level":"info","message":"Week 1 started by .blackwing.","timestamp":"2025-09-17T11:45:55.647Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T11:46:05.937Z"}
+{"level":"info","message":"User .blackwing. answered a for base 68ca9f61e77dc62f0ec40129","timestamp":"2025-09-17T11:46:09.760Z"}
+{"level":"info","message":"User .blackwing. answered a for base 68ca9f61e77dc62f0ec40129","timestamp":"2025-09-17T11:46:14.977Z"}
+{"level":"info","message":"Round 1 ended by .blackwing.","timestamp":"2025-09-17T11:46:27.345Z"}
+{"level":"info","message":"Week 1 ended by .blackwing.","timestamp":"2025-09-17T11:47:14.216Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T12:15:23.689Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T12:15:24.264Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T12:15:25.839Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T12:15:26.256Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T12:15:26.261Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T12:15:26.751Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T12:15:26.752Z"}
+{"level":"error","message":"Error registering commands: DiscordAPIError[50035]: Invalid Form Body\n5[APPLICATION_COMMANDS_DUPLICATE_NAME]: Application command names must be unique","timestamp":"2025-09-17T12:15:27.122Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T12:17:02.138Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T12:17:02.939Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T12:17:04.236Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T12:17:04.613Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T12:17:04.614Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T12:17:05.014Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T12:17:05.015Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T14:26:44.036Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T14:26:44.639Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T14:26:46.794Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T14:26:47.430Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T14:26:47.433Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T14:26:47.858Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T14:26:47.859Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T14:26:48.550Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T14:27:44.056Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T14:37:16.869Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T14:37:17.502Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T14:37:19.509Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T14:37:19.967Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T14:37:19.978Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T14:37:20.522Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T14:37:20.524Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T14:37:21.138Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T14:38:07.196Z"}
+{"level":"info","message":"GTBB week #2 started by .blackwing.","timestamp":"2025-09-17T14:38:26.154Z"}
+{"level":"info","message":"Week 2 ended by .blackwing.","timestamp":"2025-09-17T14:39:31.355Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T14:40:37.253Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T14:40:51.076Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T14:40:56.899Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T14:41:03.611Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T14:41:03.613Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T14:41:07.091Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T14:41:07.093Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T14:41:11.198Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T14:48:41.117Z"}
+{"level":"info","message":"GTBB week #2 started by .blackwing.","timestamp":"2025-09-17T14:48:56.875Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T14:53:58.386Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T14:53:59.029Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T14:54:01.148Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T14:54:01.582Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T14:54:01.590Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T14:54:02.160Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T14:54:02.162Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T14:54:02.706Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T14:56:14.199Z"}
+{"level":"info","message":"Base stored for round 2 in week 1 by .blackwing.","timestamp":"2025-09-17T14:56:41.886Z"}
+{"level":"info","message":"GTBB week #1 started by .blackwing.","timestamp":"2025-09-17T14:56:58.758Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T14:57:11.310Z"}
+{"level":"error","message":"Error handling button: ValidationError: week: Cast to ObjectId failed for value \"answer\" (type string) at path \"week\" because of \"BSONError\", answer: `68cacc0e9de9a84acc780cf7` is not a valid enum value for path `answer`.","timestamp":"2025-09-17T14:57:17.374Z"}
+{"level":"error","message":"Error handling button: ValidationError: week: Cast to ObjectId failed for value \"answer\" (type string) at path \"week\" because of \"BSONError\", answer: `68cacc0e9de9a84acc780cf7` is not a valid enum value for path `answer`.","timestamp":"2025-09-17T14:57:23.569Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T15:06:32.876Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T15:06:33.642Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T15:06:35.561Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T15:06:36.024Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T15:06:36.027Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T15:06:36.938Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T15:06:36.939Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T15:06:37.711Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T15:09:29.416Z"}
+{"level":"info","message":"Base stored for round 2 in week 1 by .blackwing.","timestamp":"2025-09-17T15:09:55.229Z"}
+{"level":"info","message":"GTBB week #1 started by .blackwing.","timestamp":"2025-09-17T15:10:10.723Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T15:10:23.288Z"}
+{"level":"error","message":"Error handling button: DiscordAPIError[10008]: Unknown Message","timestamp":"2025-09-17T15:10:25.740Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T15:13:48.669Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T15:13:49.722Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T15:13:51.531Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T15:13:52.170Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T15:13:52.174Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T15:13:53.026Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T15:13:53.027Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T15:13:53.549Z"}
+{"level":"info","message":"Base stored for round 1 in week 1 by .blackwing.","timestamp":"2025-09-17T15:30:21.130Z"}
+{"level":"info","message":"Base stored for round 2 in week 1 by .blackwing.","timestamp":"2025-09-17T15:30:46.449Z"}
+{"level":"info","message":"GTBB week #1 started by .blackwing.","timestamp":"2025-09-17T15:31:28.261Z"}
+{"level":"info","message":"Round 1 started by .blackwing.","timestamp":"2025-09-17T15:31:42.914Z"}
+{"level":"info","message":"Round 1 ended by .blackwing.","timestamp":"2025-09-17T15:32:03.540Z"}
+{"level":"info","message":"Round 2 started by .blackwing.","timestamp":"2025-09-17T15:32:22.247Z"}
+{"level":"info","message":"Round 2 ended by .blackwing.","timestamp":"2025-09-17T15:32:38.089Z"}
+{"level":"info","message":"Week 1 ended by .blackwing.","timestamp":"2025-09-17T15:33:23.931Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T15:47:20.124Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T15:47:20.678Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T15:47:23.335Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T15:47:23.836Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T15:47:23.843Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T15:47:24.351Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T15:47:24.354Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T15:47:24.875Z"}
+{"level":"info","message":"Keepalive running on port 3000","timestamp":"2025-09-17T15:52:59.489Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-09-17T15:53:00.413Z"}
+{"level":"info","message":"Logged in as Guess The BaseBuilder™#6715","timestamp":"2025-09-17T15:53:03.020Z"}
+{"level":"info","message":"Servers: SenFGr's Capital, Dd test, Guess The Base Builder™","timestamp":"2025-09-17T15:53:03.447Z"}
+{"level":"info","message":"Deleting all global application commands...","timestamp":"2025-09-17T15:53:03.454Z"}
+{"level":"info","message":"All global commands deleted.","timestamp":"2025-09-17T15:53:04.193Z"}
+{"level":"info","message":"Registering global slash commands...","timestamp":"2025-09-17T15:53:04.194Z"}
+{"level":"info","message":"All global slash commands registered.","timestamp":"2025-09-17T15:53:04.775Z"}
