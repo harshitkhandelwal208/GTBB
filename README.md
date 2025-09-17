@@ -1,7 +1,7 @@
 # GTBB Discord Bot
 
 Instructions:
-- Install: `npm install discord.js@14 mongoose winston express axios dotenv`
+- Install: `npm install`
 - Register commands: `node src/utils/deploy-commands.js`
 - Start bot: `node src/index.js`
 - Edit `.env` with your secrets.
