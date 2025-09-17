@@ -25,7 +25,7 @@ module.exports = {
             for (let uid of userIds) {
                 try {
                     const user = await client.users.fetch(uid);
-                    names.push(`[${user.username}](https://discord.com/user/${user.id})`);
+                    names.push(`[${user.username}](https://discord.com/user/${user.nickname})`);
                 } catch {
                     names.push(`[User ${uid}](https://discord.com/user/${uid})`);
                 }
