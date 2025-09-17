@@ -7,8 +7,8 @@ Instructions:
 - Edit `.env` with your secrets.
 
 For development:
-- Clear registered commands: `node src/commands/dev_clear_commands.js`
-- Clear database: `node src/commands/dev_clear_db.js`
+- Clear registered commands: `node src/clear-commands.js`
+- Clear database: `node src/clear-db.js`
 
 ---
 **Made by [BlackWing](https://github.com/harshitkhandelwal208)**
