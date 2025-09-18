@@ -36,14 +36,13 @@ module.exports = {
 
             // Handle role ping
             const role = interaction.options.getRole('ping_role');
-            const pingText = role ? `<@&${role.id}>` : '';
+            const pingText = role ? `<@&${role.id}> ` : '';
 
             await interaction.editReply({
-                content: `${pingText} GTBB Week #${nextWeek.weekNumber} has started! Good luck to all participants!`,
-                allowedMentions: {
-                    parse: ['roles'],
-                    roles: role ? [role.id] : []
-                }
+                content: `${pingText}GTBB Week #${nextWeek.weekNumber} has started! Good luck to all participants!`,
+                allowedMentions: role
+                    ? { roles: [role.id] } // only allow this specific role to be pinged
+                    : { parse: [] }        // no role pings
             });
         } catch (err) {
             logger.error('Error starting new week: ' + err);
