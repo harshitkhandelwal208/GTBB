@@ -38,7 +38,7 @@ module.exports = {
             const responses = await GTBBResponse.find({ base: base._id });
             const userIds = [...new Set(responses.map(r => r.userId))];
 
-            // Helper function to always prefer nicknames, fallback to global display name
+            // Helper: fetch display name (nickname > username)
             const getDisplayName = async (uid) => {
                 try {
                     const member = await interaction.guild.members.fetch(uid);
@@ -46,18 +46,16 @@ module.exports = {
                 } catch {
                     try {
                         const user = await client.users.fetch(uid);
-                        const name = user.globalName || user.username;
-                        return `[${name}](https://discordapp.com/users/${uid})`;
+                        return `[${user.username}](https://discordapp.com/users/${uid})`;
                     } catch {
                         return `[User ${uid}](https://discordapp.com/users/${uid})`;
                     }
                 }
             };
 
-            const names = [];
-            for (const uid of userIds) {
-                names.push(await getDisplayName(uid));
-            }
+            const names = userIds.length
+                ? await Promise.all(userIds.map(getDisplayName))
+                : [];
 
             const answeredString = userIds.length
                 ? names.join(', ')
