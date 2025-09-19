@@ -38,16 +38,26 @@ module.exports = {
             const responses = await GTBBResponse.find({ base: base._id });
             const userIds = [...new Set(responses.map(r => r.userId))];
 
-            // Fetch members in bulk
-            const members = await interaction.guild.members.fetch({ user: userIds });
-            const names = userIds.map(uid => {
-                const member = members.get(uid);
-                if (member) {
+            // Helper function to always prefer nicknames, fallback to global display name
+            const getDisplayName = async (uid) => {
+                try {
+                    const member = await interaction.guild.members.fetch(uid);
                     return `[${member.displayName}](https://discordapp.com/users/${uid})`;
+                } catch {
+                    try {
+                        const user = await client.users.fetch(uid);
+                        const name = user.globalName || user.username;
+                        return `[${name}](https://discordapp.com/users/${uid})`;
+                    } catch {
+                        return `[User ${uid}](https://discordapp.com/users/${uid})`;
+                    }
                 }
-                // fallback if not in guild anymore
-                return `[User ${uid}](https://discordapp.com/users/${uid})`;
-            });
+            };
+
+            const names = [];
+            for (const uid of userIds) {
+                names.push(await getDisplayName(uid));
+            }
 
             const answeredString = userIds.length
                 ? names.join(', ')
