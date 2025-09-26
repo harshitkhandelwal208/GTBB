@@ -53,13 +53,13 @@ module.exports = {
                 }
             };
 
-            const names = userIds.length
-                ? await Promise.all(userIds.map(getDisplayName))
-                : [];
-
-            const answeredString = userIds.length
-                ? names.join(', ')
-                : 'No one has answered yet.';
+            let answeredString;
+            if (userIds.length > 0) {
+                const names = await Promise.all(userIds.map(getDisplayName));
+                answeredString = names.join('\n'); // newline separated
+            } else {
+                answeredString = 'No one has answered yet.';
+            }
 
             // Create the embed
             const embed = new EmbedBuilder()
