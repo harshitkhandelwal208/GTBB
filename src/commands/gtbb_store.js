@@ -2,8 +2,8 @@ const { SlashCommandBuilder } = require('discord.js');
 const { GTBBBase } = require('../models/GTBBBase');
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('gtbb_store')
-        .setDescription('Store a question for a future GTBB round.')
+        .setName('gtba_store')
+        .setDescription('Store a question for a future GTBA round.')
         // ---- All required options first ----
         .addStringOption(o => o.setName('correct_option').setDescription('Correct option (a-e)').setRequired(true).addChoices(
             { name: 'A', value: 'a' }, { name: 'B', value: 'b' }, { name: 'C', value: 'c' }, { name: 'D', value: 'd' }, { name: 'E', value: 'e' }
@@ -50,7 +50,7 @@ module.exports = {
                 week: nextWeek._id
             });
             logger.info(`Base stored for round ${data.roundNumber} in week ${nextWeek.weekNumber} by ${interaction.user.tag}`);
-            await interaction.reply({ content: `Question stored for GTBB Week #${nextWeek.weekNumber}, Round #${data.roundNumber}`, ephemeral: true });
+            await interaction.reply({ content: `Question stored for GTBA Week #${nextWeek.weekNumber}, Round #${data.roundNumber}`, ephemeral: true });
         } catch (err) {
             logger.error('Error storing question: ' + err);
             await interaction.reply({ content: 'Error storing the question. Please check your input or contact an admin.', ephemeral: true });
