@@ -4,10 +4,10 @@ const { GTBBWeek } = require('../models/GTBBWeek');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('gtbb_week_start')
-        .setDescription('Start the next GTBB week (activates stored questions and optionally pings a role)')
+        .setDescription('Start the next GTBA week (activates stored questions and optionally pings a role)')
         .addRoleOption(option =>
             option.setName('ping_role')
-                .setDescription('Role to ping for GTBB week start')
+                .setDescription('Role to ping for GTBA week start')
                 .setRequired(false)
         ),
     async execute(interaction, client, logger) {
@@ -25,21 +25,21 @@ module.exports = {
             const nextWeek = await GTBBWeek.findOne({ status: 'next' });
             if (!nextWeek) {
                 return await interaction.editReply({
-                    content: 'No GTBB week is prepared (no bases stored for the next week yet). Please store questions with `/gtbb_store` first.'
+                    content: 'No GTBA week is prepared (no bases stored for the next week yet). Please store questions with `/gtbb_store` first.'
                 });
             }
 
             nextWeek.status = 'active';
             await nextWeek.save();
 
-            logger.info(`GTBB week #${nextWeek.weekNumber} started by ${interaction.user.tag}`);
+            logger.info(`GTBA week #${nextWeek.weekNumber} started by ${interaction.user.tag}`);
 
             // Handle role ping
             const role = interaction.options.getRole('ping_role');
             const pingText = role ? `<@&${role.id}> ` : '';
 
             await interaction.editReply({
-                content: `${pingText}GTBB Week #${nextWeek.weekNumber} has started! Good luck to all participants!`,
+                content: `${pingText}GTBA Week #${nextWeek.weekNumber} has started! Good luck to all participants!`,
                 allowedMentions: role
                     ? { roles: [role.id] } // only allow this specific role to be pinged
                     : { parse: [] }        // no role pings
