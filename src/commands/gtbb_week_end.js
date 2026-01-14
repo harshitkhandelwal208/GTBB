@@ -6,7 +6,7 @@ const axios = require('axios');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('gtbb_week_end')
+        .setName('gtba_week_end')
         .setDescription('Ends the current GTBB week and posts results'),
     async execute(interaction, client, logger) {
         try {
@@ -71,7 +71,7 @@ module.exports = {
 
             // Single announcement (with embed)
             let embed = new EmbedBuilder()
-                .setTitle(`GTBB Week #${week.weekNumber} Leaderboard`)
+                .setTitle(`GTBA Week #${week.weekNumber} Leaderboard`)
                 .setColor(0xFFD700)
                 .setDescription(
                     leaderboard.length === 0
@@ -88,7 +88,7 @@ module.exports = {
                 );
 
             await interaction.editReply({
-                content: `GTBB week ended! 🎉\nResults for Week #${week.weekNumber}:`,
+                content: `GTBA week ended! 🎉\nResults for Week #${week.weekNumber}:`,
                 embeds: [embed]
             });
 
