@@ -13,7 +13,7 @@ const RoundMessage = require('../models/RoundMessage');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('gtbb_round_start')
-        .setDescription('Start a GTBB round in the active week')
+        .setDescription('Start a GTBA round in the active week')
         .addIntegerOption(o =>
             o.setName('round_number')
                 .setDescription('Round number')
@@ -63,9 +63,9 @@ module.exports = {
 
             // Create the embed
             const embed = new EmbedBuilder()
-                .setTitle(`GTBB Week #${week.weekNumber} - Round #${round}`)
+                .setTitle(`GTBA Week #${week.weekNumber} - Round #${round}`)
                 .setImage(base.baseImage)
-                .setDescription('Who built this base? Choose your answer below:')
+                .setDescription('Who attacked this base? Choose your answer below:')
                 .addFields({
                     name: 'Already answered',
                     value: answeredString,
