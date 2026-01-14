@@ -4,7 +4,7 @@ const { GTBBWeek } = require('../models/GTBBWeek');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('gtbb_leaderboard')
-        .setDescription('Show the GTBB leaderboard')
+        .setDescription('Show the GTBA leaderboard')
         .addSubcommand(s =>
             s.setName('week')
              .setDescription('Leaderboard for a specific week')
@@ -48,7 +48,7 @@ module.exports = {
                 desc += `${i + 1}. [${name}](https://discordapp.com/users/${entry.userId}) — **${entry.points}** pts\n`;
             }
             let embed = new EmbedBuilder()
-                .setTitle(`GTBB ${sub === 'week' ? 'Weekly' : 'Overall'} Leaderboard`)
+                .setTitle(`GTBA ${sub === 'week' ? 'Weekly' : 'Overall'} Leaderboard`)
                 .setDescription(desc || 'No data yet.')
                 .setColor(0x00AE86);
             await interaction.reply({ embeds: [embed] });
