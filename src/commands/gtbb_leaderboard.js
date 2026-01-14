@@ -3,7 +3,7 @@ const { GTBBPoint } = require('../models/GTBBPoint');
 const { GTBBWeek } = require('../models/GTBBWeek');
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('gtbb_leaderboard')
+        .setName('gtba_leaderboard')
         .setDescription('Show the GTBA leaderboard')
         .addSubcommand(s =>
             s.setName('week')
