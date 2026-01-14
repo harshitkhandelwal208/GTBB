@@ -6,8 +6,8 @@ const RoundMessage = require('../models/RoundMessage');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('gtbb_round_end')
-        .setDescription('Ends the current GTBB round, locks answers, and gives points'),
+        .setName('gtba_round_end')
+        .setDescription('Ends the current GTBA round, locks answers, and gives points'),
     async execute(interaction, client, logger) {
         try {
             await interaction.deferReply();
@@ -77,7 +77,7 @@ module.exports = {
 
             // Create embed
             let embed = new EmbedBuilder()
-                .setTitle(`GTBB Round #${base.roundNumber} Results`)
+                .setTitle(`GTBA Round #${base.roundNumber} Results`)
                 .setImage(base.baseImage)
                 .addFields(
                     { name: 'Correct Answer', value: base.options[['a','b','c','d','e'].indexOf(base.correctOption)] },
